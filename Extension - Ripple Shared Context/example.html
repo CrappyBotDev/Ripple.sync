@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ripple Example - Shared Ripple / Storage Environment</title>
+  <link rel = "stylesheet"
+    type="text/css"
+    href = "example.css" />
+</head>
+
+<body>
+  <a href="./example.html" target="_blank">open another example page</a>
+  <div>Local Ripple Objects:</div>
+  <div id="test_container">
+  </div>
+  <button id="run_test">Run Test</button>
+  <button id="sync_from_storage">Sync From Storage</button>
+  <button id="log_ripple">Log Ripple.lookup</button>
+  <button id="clear_storage">Clear Storage</button>
+  <button id="log_storage">Log Storage</button>
+  <div id="make_container">
+    <div class="line_container">
+        <div class="line_label">
+            ripple_id:
+        </div>
+        <input type="text" id="make_id">
+    </div>
+    <div class="line_container">
+        <div class="line_label">
+            color:
+        </div>
+        <input type="text" id="make_color">
+    </div>
+    <div class="line_container">
+        <div class="line_label">
+            backgroundColor: 
+        </div>
+        <input type="text" id="make_bgcolor">
+    </div>
+    <button id="make_edit_obj">Make / Edit Ripple Obj</button>  
+  </div>
+  <script src="./Ripple_Shared_Environment.js"></script>
+  <script src="./Ripple_Customizations.js"></script>
+  <script src="./example.js"></script>
+</body>
+</html>

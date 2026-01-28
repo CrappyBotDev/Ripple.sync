@@ -1,0 +1,40 @@
+body {
+    background-color: #222324;
+    color: #c5c8c6;
+    font-size: 12px;
+}
+a{
+    color: #c5c8c6;
+}
+
+#make_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.line_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.line_label{
+    width: 120px
+}
+
+#test_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: 300px;
+}
+
+.ripple_obj{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.id_label{
+    padding-left:10px;
+}
