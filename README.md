@@ -38,7 +38,7 @@ Examples are provided in the form of Chrome extensions. To load them:
 
 Once loaded, click the extension icon to open the example page, click it again to open a second example page, and then move them to different windows to watch things sync between the two pages as you make changes with the controls on the example page.  "Extension - Ripple Shared Context" is an example of a Ripple.sync set up where all the classes exist in the same context and that context has access to the storage to be used to store synced objects.  "Extension - Ripple Separate Context" is an example of a Ripple.sync set up where the "Storage_Area" is in a separate context (in this case it's a background service worker).
 
-#Caveats:
+# Caveats:
 This does not implement cloning or comparison functions, so whenever Ripple.sync has to sync objects, it sends the full object being synced.  Keep that in mind - this may nopt be the ideal choice for syncing massive objects.  Similarly, it does not implement any sort of cloning, so when writing handlers, you'll need to be careful about where and when you modify things that are pass by reference.
 
 # To Do
