@@ -14,7 +14,7 @@ Javascript framework for keeping objects in sync between tabs / different execut
 The general setup process is probably easiest to see in "Extension - Ripple Shared Context/Ripple_Customizations.js".  Start by setting up a Storage_Area by:
 - implementing storage functions: Storage_Area.get_by_id(), Storage_Area.set_by_id(), Storage_Area.delete_by_id(), Storage_Area.storage_serialize(), Storage_Area.storage_deserialize(), - may also require setting up access to your database or whatever storage you want to use
 - figuring out how your Storage_Area and Storage_Adapter will communicate: may require implementing Storage_Area.listen(), Storage_Area.stop_listening(), Storage_Area.serialize_message(), Storage_Area.deserialize_message() if your Storage_Area and Storage_Adapter are in different contexts
-- set up your Storage_Area.propagate() function to send sync update messages to all relevant Ripple execution contexts
+- set up your Storage_Area.propagate() function to send sync update messages to all relevant execution contexts that you want to use Ripple to sync objects between
 - set up your storage handler functions for "Create", "Read", "Update" "Delete" and "Write" operations to customize behavior as desired
 
 Then set up the other classes:
